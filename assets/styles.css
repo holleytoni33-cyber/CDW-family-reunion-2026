@@ -1,0 +1,20 @@
+/* Minimal styles for the CDW Family Reunion site */
+:root{
+  --max-width:960px;
+  --accent:#2b7a78;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;margin:0;color:#111}
+.container{max-width:var(--max-width);margin:1.5rem auto;padding:0 1rem}
+.site-header{background:linear-gradient(90deg,#e6fffb,#f0fdf4);padding:1rem;text-align:center}
+.logo{width:80px;height:auto;display:block;margin:0 auto 0.5rem}
+h1{margin:.25rem 0;font-size:1.35rem}
+.dates{color:var(--muted);font-size:.95rem}
+h2{color:var(--accent);margin-top:1.25rem}
+.form-wrap{background:#fff;border-radius:6px;padding:0.5rem;border:1px solid #e6e6e6}
+.small{font-size:.9rem;color:var(--muted)}
+@media (max-width:600px){
+  iframe{height:650px}
+  .logo{width:64px}
+}
