@@ -12,9 +12,23 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-he
 h1{margin:.25rem 0;font-size:1.35rem}
 .dates{color:var(--muted);font-size:.95rem}
 h2{color:var(--accent);margin-top:1.25rem}
-.form-wrap{background:#fff;border-radius:6px;padding:0.5rem;border:1px solid #e6e6e6}
+.form-wrap{
+  background:#fff;
+  border-radius:6px;
+  padding:0.5rem;
+  border:1px solid #e6e6e6;
+}
+.form-wrap iframe{
+  width:100%;
+  height:900px;
+  border:0;
+  border-radius:4px;
+}
 .small{font-size:.9rem;color:var(--muted)}
+@media (max-width:900px){
+  .form-wrap iframe{height:1200px}
+}
 @media (max-width:600px){
-  iframe{height:650px}
+  .form-wrap iframe{height:1400px}
   .logo{width:64px}
 }
